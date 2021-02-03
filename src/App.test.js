@@ -34,5 +34,9 @@ describe('Whistle Form', () => {
     expect(wrapper.find('label').text()).toBe('New Whistle Here');
   })
 
+  test('Form renders a text area for new whistles', () => {
+    expect(wrapper.find('text-area').exists()).toBeTruthy();
+  })
+
 })
 

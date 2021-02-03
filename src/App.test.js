@@ -38,5 +38,12 @@ describe('Whistle Form', () => {
     expect(wrapper.find('textarea').exists()).toBeTruthy();
   })
 
+  test("Form's onChange method functions correctly", () => {
+    const sampleWhistle = wrapper.find('textarea');
+    sampleWhistle.value = 'This is our sample Whistle';
+    sampleWhistle.invoke('onChange', { target: { value: 'This is our sample Whistle' } });
+    expect(wrapper).toMatchSnapshot();
+  })
+
 })
 

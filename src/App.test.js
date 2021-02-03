@@ -30,5 +30,9 @@ describe('Whistle Form', () => {
     expect(wrapper.find('.whistle-form').exists()).toBeTruthy();
   })
 
+  test('Form renders a label field with correct text', () => {
+    expect(wrapper.find('label').text()).toBe('New Whistle Here');
+  })
+
 })
 

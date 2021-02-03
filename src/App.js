@@ -3,9 +3,9 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-
-      </header>
+      <h1 className="App-header">
+        Whistler: The More Quiet Twitter
+      </h1>
     </div>
   );
 }

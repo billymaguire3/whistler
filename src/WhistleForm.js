@@ -33,6 +33,11 @@ class WhistleForm extends Component {
               onChange={this.handleChange}
             />
           </label>
+          <input
+            className="submit-btn"
+            type="submit"
+            value="Share Whistle"
+          />
         </form>
       </div>
     );

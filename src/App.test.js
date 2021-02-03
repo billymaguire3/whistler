@@ -1,5 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
+import WhistlerHeader from './WhistlerHeader';
 
 // Enzyme Config
 import { configure, shallow, mount } from 'enzyme';
@@ -10,7 +11,7 @@ describe('Whistler Header', () => {
 
   let wrapper;
   beforeEach(() => {
-    wrapper = shallow(<App />);
+    wrapper = shallow(<WhistlerHeader />);
   })
 
   test('renders the title of the project', () => {

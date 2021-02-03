@@ -1,11 +1,9 @@
-import './App.css';
+import WhistlerHeader from './WhistlerHeader';
 
 function App() {
   return (
     <div className="App">
-      <h1 className="App-header">
-        Whistler: The More Quiet Twitter
-      </h1>
+      <WhistlerHeader />
     </div>
   );
 }

@@ -5,7 +5,9 @@ class WhistleForm extends Component {
     return (
       <div>
         <form className="whistle-form">
-
+          <label>
+            New Whistle Here
+          </label>
         </form>
       </div>
     );

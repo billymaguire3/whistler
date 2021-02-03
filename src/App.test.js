@@ -19,3 +19,16 @@ describe('Whistler Header', () => {
   });
 })
 
+describe('Whistle Form', () => {
+
+  let wrapper;
+  beforeEach(() => {
+    wrapper = mount(<App />);
+  })
+
+  test('App renders a form', () => {
+    expect(wrapper.find('.whistle-form').exists()).toBeTruthy();
+  })
+
+})
+

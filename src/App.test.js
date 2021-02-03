@@ -1,6 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 import WhistlerHeader from './WhistlerHeader';
+import WhistleForm from './WhistleForm';
 
 // Enzyme Config
 import { configure, shallow, mount } from 'enzyme';
@@ -47,6 +48,19 @@ describe('Whistle Form', () => {
 
   test('Form renders submit button', () => {
     expect(wrapper.find('.submit-btn').exists()).toBeTruthy();
+  })
+
+  test('Submission of WhistleForm adds new whistle to the whistles array in state of App', () => {
+    const app = mount(<App />);
+    const form = mount(<WhistleForm />);
+    const mockWhistlesArray = [];
+    const mockWhistle = {
+      userSelected: 'Billy',
+      value: "Billy's mock whistle"
+    }
+    app.setState({ whistles: [...mockWhistlesArray, mockWhistle] });
+    form.find('form').invoke('onSubmit', { target: mockWhistle });
+    expect(app).toMatchSnapshot();
   })
 
 })

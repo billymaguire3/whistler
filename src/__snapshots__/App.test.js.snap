@@ -1,3 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Whistle Form Form's onChange method functions correctly 1`] = `ReactWrapper {}`;
+
+exports[`Whistle Form Submission of WhistleForm adds new whistle to the whistles array in state of App 1`] = `ReactWrapper {}`;

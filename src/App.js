@@ -6,14 +6,25 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-
+      whistles: []
     }
+    this.addWhistle = this.addWhistle.bind(this);
   }
+
+  addWhistle(newWhistle) {
+    this.setState({
+      whistles: [...this.state.whistles, newWhistle]
+    })
+    return;
+  }
+
   render() {
     return (
       <div className="App">
         <WhistlerHeader />
-        <WhistleForm />
+        <WhistleForm
+          addWhistle={this.addWhistle}
+        />
       </div>
     );
   }

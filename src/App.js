@@ -1,12 +1,11 @@
 import WhistlerHeader from './WhistlerHeader';
+import WhistleForm from './WhistleForm';
 
 function App() {
   return (
     <div className="App">
       <WhistlerHeader />
-      <form className="whistle-form">
-
-      </form>
+      <WhistleForm />
     </div>
   );
 }

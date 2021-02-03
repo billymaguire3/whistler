@@ -7,6 +7,7 @@ class WhistleForm extends Component {
         <form className="whistle-form">
           <label>
             New Whistle Here
+            <textarea />
           </label>
         </form>
       </div>

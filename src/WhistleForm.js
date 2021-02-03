@@ -36,7 +36,7 @@ class WhistleForm extends Component {
           <input
             className="submit-btn"
             type="submit"
-            value="Share Whistle"
+            value="Quietly Share Whislte"
           />
         </form>
       </div>

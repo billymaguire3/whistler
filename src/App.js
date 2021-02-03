@@ -4,6 +4,9 @@ function App() {
   return (
     <div className="App">
       <WhistlerHeader />
+      <form className="whistle-form">
+
+      </form>
     </div>
   );
 }

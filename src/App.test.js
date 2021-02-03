@@ -1,8 +1,20 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
+// Enzyme Config
+import { configure, shallow, mount } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
+configure({ adapter: new Adapter() });
+
+describe('Whistler Header', () => {
+
+  let wrapper;
+  beforeEach(() => {
+    wrapper = shallow(<App />);
+  })
+
+  test('renders the title of the project', () => {
+    expect(wrapper.find('h1').text()).toContain('Whistler: The More Quiet Twitter')
+  });
+})
+

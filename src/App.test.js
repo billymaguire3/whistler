@@ -45,5 +45,9 @@ describe('Whistle Form', () => {
     expect(wrapper).toMatchSnapshot();
   })
 
+  test('Form renders submit button', () => {
+    expect(wrapper.find('.submit-btn').exists()).toBeTruthy();
+  })
+
 })
 
